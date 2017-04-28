@@ -1,0 +1,14 @@
+{
+  "name": "mouse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "iohook": "^0.1.8",
+    "request": "^2.81.0",
+    "standard-settings": "^1.1.0"
+  }
+}
