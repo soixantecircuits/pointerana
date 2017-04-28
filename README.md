@@ -9,6 +9,19 @@ Pointerana got his name from pointer events API. This tool helps to track cursor
 ## ⚙ Configuration
 
 You need to provide few config in order to send data to a graphana server.
+The first is your graphana url. The key is `graphana.url`
+The second is the city you are sending data from. Default is Paris.
+
+The setting object looks like this: 
+
+```
+{
+  "graphana":{
+    "url": "",
+    "city": "Paris"
+  }
+}
+```
 
 ## 👋 Usage
 
