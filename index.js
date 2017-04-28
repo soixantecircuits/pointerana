@@ -6,7 +6,7 @@ const request = require('request')
 const standardSettings = require('standard-settings')
 const settings = require('nconf').get()
 
-let url = settings.url
+let url = settings.graphana.url
 
 ioHook.on('mousedown', function (msg) {console.log(msg);})
 
@@ -27,7 +27,9 @@ ioHook.on('mouseclick', function (msg) {
       console.log(body)
     } else {
       console.error(error)
-      console.log(response.statusCode)
+      if (response) {
+        console.log(response.statusCode)
+      }
     }
   })
 })
@@ -45,7 +47,9 @@ ioHook.on('mousemove', function (msg) {
       console.log(body)
     } else {
       console.error(error)
-      console.log(response.statusCode)
+      if (response) {
+        console.log(response.statusCode)
+      }
     }
   })
 })
